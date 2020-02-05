@@ -1,13 +1,9 @@
-// function animateChange() {
-//     console.log('main')
-// }
-
 // This changes everything
 "use strict";
 
 // retrieve the element
-let element = document.getElementById("link") as HTMLElement;
-console.log(element)
+let element = document.getElementById("link") as HTMLElement
+
 // reset the transition by...
 element.addEventListener("click", function(e){
   e.preventDefault;

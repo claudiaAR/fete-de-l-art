@@ -1,11 +1,15 @@
-// function animateChange() {
-//     console.log('main')
-// }
-// This changes everything
 "use strict";
+window.onload = function () {
+    var el = document.getElementById('link');
+    if (el) {
+        var definitelyAnElement = el;
+    }
+};
+window.onload = function () {
+    document.getElementById('link').style.opacity = 1;
+};
 // retrieve the element
 var element = document.getElementById("link");
-console.log(element);
 // reset the transition by...
 element.addEventListener("click", function (e) {
     e.preventDefault;
