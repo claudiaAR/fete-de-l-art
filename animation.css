@@ -1,0 +1,58 @@
+/*Animation bakgrund*/
+.permanenta_animation{
+    background: white;
+    animation: back 12s ease-in infinite alternate;
+  }
+  
+  @keyframes back {
+    from {
+        background: #020024;
+    }
+  
+    to {
+        background: #5553ec;
+    }
+  }
+  
+  .flik{
+    position: absolute;
+    bottom: 1;
+    top: 0;
+    left: 0;
+    right: 1;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    font-family: 'helvetica';
+  }
+  
+  .next{
+    background: #ffdd00;
+  }
+  
+  .text{
+    color:#8e96f3;
+  }
+  
+  .relative-container {
+    position: relative;
+  }
+  
+  /*Animation text*/
+  .span_animation {
+    line-height: 3rem;
+    color: #ad73e9;
+    animation: mer 9s ease-in infinite alternate;
+    
+  }
+  
+  @keyframes mer {
+    from {
+        color: #2fbc98;
+    }
+  
+    to {
+        color: #02b9de;
+    }
+  }
+  
+  
