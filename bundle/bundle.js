@@ -1,12 +1,9 @@
 "use strict";
 window.onload = function () {
-    var el = document.getElementById('link');
-    if (el) {
-        var definitelyAnElement = el;
+    var fader = document.getElementById('link');
+    if (fader) {
+        fader.style.opacity = 1;
     }
-};
-window.onload = function () {
-    document.getElementById('link').style.opacity = 1;
 };
 // retrieve the element
 var element = document.getElementById("link");
