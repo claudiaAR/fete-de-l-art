@@ -1,20 +1,24 @@
-// function animateChange() {
-//     console.log('main')
-// }
-// This changes everything
 "use strict";
+var fade1 = document.getElementById('link1');
+var fade2 = document.getElementById('link2');
+var fade3 = document.getElementById('link3');
+var fade4 = document.getElementById('link4');
+window.onload = function () {
+    if (fade1 && fade2 && fade3 && fade4) {
+        fade1.style.opacity = "1";
+        fade2.style.opacity = "1";
+        fade3.style.opacity = "1";
+        fade4.style.opacity = "1";
+    }
+};
 // retrieve the element
-var element = document.getElementById("link");
-console.log(element);
+var element = document.getElementById("link1");
 // reset the transition by...
 element.addEventListener("click", function (e) {
     e.preventDefault;
     // -> removing the class
     element.classList.remove("run-animation");
     // -> triggering reflow /* The actual magic */
-    // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
-    // This was, from the original tutorial, will no work in strict mode. Thanks Felis Phasma! The next uncommented line is the fix.
-    // element.offsetWidth = element.offsetWidth;
     void element.offsetWidth;
     // -> and re-adding the class
     element.classList.add("run-animation");

@@ -10,9 +10,16 @@ body {
   
 }
 
+#link1, #link2, #link3, #link4 {
+  opacity: 0;
+  transition-duration: 1s;
+  transition-delay: 8s;
+}
+
 a:link {
   color: black;
   text-decoration: none;
+  
 }
 
 a:visited {
