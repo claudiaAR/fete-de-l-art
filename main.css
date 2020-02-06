@@ -9,21 +9,10 @@ body {
   font-family: monospace;
 }
 
-#link1 {
+#link1, #link2, #link3, #link4 {
   opacity: 0;
-  transition: 10s;
-}
-#link2 {
-  opacity: 0;
-  transition: 10s;
-}
-#link3 {
-  opacity: 0;
-  transition: 10s;
-}
-#link4 {
-  opacity: 0;
-  transition: 10s;
+  transition-duration: 1s;
+  transition-delay: 8s;
 }
 
 a:link {
