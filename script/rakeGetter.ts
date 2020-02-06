@@ -1,8 +1,7 @@
-// This changes everything
 "use strict";
 
 // retrieve the element
-let element = document.getElementById("link") as HTMLElement
+let element = document.getElementById("link1") as HTMLElement
 
 // reset the transition by...
 element.addEventListener("click", function(e){
@@ -12,9 +11,6 @@ element.addEventListener("click", function(e){
   element.classList.remove("run-animation");
   
   // -> triggering reflow /* The actual magic */
-  // without this it wouldn't work. Try uncommenting the line and the transition won't be retriggered.
-  // This was, from the original tutorial, will no work in strict mode. Thanks Felis Phasma! The next uncommented line is the fix.
-  // element.offsetWidth = element.offsetWidth;
   
   void element.offsetWidth;
   
